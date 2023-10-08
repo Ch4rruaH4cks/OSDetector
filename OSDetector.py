@@ -40,7 +40,7 @@ def determinar_so(ip, ttl):
         # Si el TTL es menor o igual a 64, sugerimos que el sistema operativo es Linux
         print(f"[*] TTL({ttl})")
         print("[*] OS: Linux")
-    elif(ttl >= 128):
+    elif(ttl <= 128):
         # Si el TTL es mayor o igual a 128, sugerimos que el sistema operativo es Windows
         print(f"[*] TTL({ttl})")
         print("[*] OS: Windows")
